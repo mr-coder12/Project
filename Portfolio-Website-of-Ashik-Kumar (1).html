@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashik Kumar - Personal Brand Strategist</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#7dd3fc',secondary:'#a7f3d0'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .hero-bg {
+            background: linear-gradient(135deg, #fef7ff 0%, #f0f9ff 100%);
+        }
+        .skill-card {
+            background: linear-gradient(135deg, #fdf2f8 0%, #f0fdf4 100%);
+        }
+        .service-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #ecfdf5 100%);
+        }
+        .portfolio-card {
+            background: linear-gradient(135deg, #ede9fe 0%, #f0f9ff 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-blue-50 min-h-screen">
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-800">Ashik Kumar</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary">
+                        <i class="ri-menu-line ri-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-700 hover:text-primary">Skills</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 text-gray-700 hover:text-primary">Portfolio</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg min-h-screen flex items-center py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                            Hi, I'm <span class="text-primary">Ashik Kumar</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            Empowering Personal Brands Through Tech & Content
+                        </p>
+                        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+                            I help individuals and educators build powerful personal brands through strategic content creation, blogging, and digital presence optimization.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+                                Explore My Work
+                            </button>
+                            <button class="border-2 border-primary text-primary px-8 py-4 !rounded-button font-semibold hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+                                Get In Touch
+                            </button>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-80 h-80 rounded-full overflow-hidden shadow-2xl">
+                                <img src="https://static.readdy.ai/image/b547e886fc510ba2a50ea63f447ba2d8/48b05a73f645141894378cfb3e952c19.jfif" 
+                                     alt="Ashik Kumar Profile" 
+                                     class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-secondary rounded-full opacity-80"></div>
+                            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-primary rounded-full opacity-60"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Passionate about bridging the gap between technology and creative content
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">My Story</h3>
+                        <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            I am a content creator who runs several successful blogs and social media platforms focused on internet culture and education. I specialize in building personal brands and helping others grow digitally.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            I bring both technical and creative skills to everything I do, combining my programming expertise with content strategy to deliver comprehensive digital solutions.
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-graduation-cap-line text-primary ri-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Education</h4>
+                                <p class="text-gray-600">B.Tech from Tirupati, Puttur (Andhra Pradesh)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://readdy.ai/api/search-image?query=Modern%20workspace%20setup%20with%20laptop%2C%20notebooks%2C%20coffee%20cup%2C%20plants%2C%20creative%20content%20creation%20environment%2C%20clean%20minimalist%20desk%2C%20natural%20lighting%2C%20productivity%20and%20creativity%20theme&width=600&height=400&seq=workspace&orientation=landscape" 
+                             alt="Workspace" 
+                             class="rounded-xl shadow-lg object-cover object-top w-full h-80">
+                        <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary/20 rounded-xl"></div>
+                        <div class="absolute -top-6 -right-6 w-20 h-20 bg-primary/20 rounded-full"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        A diverse skill set spanning technology, content creation, and digital marketing
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-code-line text-primary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Programming</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Java</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Python</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">HTML/CSS</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-22 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-database-line text-secondary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Data & Analytics</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">SQL</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Data Analysis</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-18 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">AI</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-16 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-article-line text-primary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Content Creation</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Blogging</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-24 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Digital Branding</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-22 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Social Media</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-microsoft-line text-secondary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Microsoft Tools</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Excel</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-22 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Office Suite</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-terminal-line text-primary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Programming Languages</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">C/C++</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-18 h-2 bg-primary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-user-star-line text-secondary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Personal Branding</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Brand Strategy</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-22 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">Digital Marketing</span>
+                                <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                    <div class="w-20 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Services</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We help individuals and educators build personal brands through blogging, social media, and content strategies
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-edit-line text-primary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Blog Setup & Strategy</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Complete blog setup with content strategy, SEO optimization, and growth planning tailored to your niche.
+                        </p>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-user-star-line text-secondary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Personal Brand Coaching</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            One-on-one coaching to develop your unique personal brand and establish thought leadership in your field.
+                        </p>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-calendar-line text-primary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Social Media Planning</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Strategic social media content planning and scheduling to maximize engagement and reach.
+                        </p>
+                    </div>
+
+                    <div class="service-card p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-secondary/10 rounded-xl flex items-center justify-center mb-6">
+                            <i class="ri-tools-line text-secondary ri-2x"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Tech Support</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Technical support for personal websites, blog optimization, and digital tool integration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Showcasing successful projects and digital platforms
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="portfolio-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="mb-6">
+                            <img src="https://readdy.ai/api/search-image?query=Colorful%20Holi%20festival%20celebration%20website%20design%2C%20vibrant%20colors%2C%20festive%20theme%2C%20modern%20web%20interface%2C%20clean%20layout%2C%20celebration%20graphics&width=300&height=200&seq=holi-website&orientation=landscape" 
+                                 alt="Holi.co.in" 
+                                 class="w-full h-40 object-cover object-top rounded-lg">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Holi.co.in</h3>
+                        <p class="text-gray-600 text-sm mb-4">A festive blog celebrating the colors and traditions of Holi festival</p>
+                        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+                            Visit Site <i class="ri-external-link-line ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="mb-6">
+                            <img src="https://readdy.ai/api/search-image?query=Diwali%20Deepawali%20festival%20website%20design%2C%20golden%20lights%2C%20traditional%20diyas%2C%20elegant%20cultural%20theme%2C%20warm%20colors%2C%20celebration%20website%20interface&width=300&height=200&seq=deepawali-website&orientation=landscape" 
+                                 alt="Deepawali.co.in" 
+                                 class="w-full h-40 object-cover object-top rounded-lg">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Deepawali.co.in</h3>
+                        <p class="text-gray-600 text-sm mb-4">Cultural and celebratory content focused on Diwali traditions</p>
+                        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+                            Visit Site <i class="ri-external-link-line ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="mb-6">
+                            <img src="https://readdy.ai/api/search-image?query=YouTube%20channel%20content%20creation%20setup%2C%20modern%20video%20production%20workspace%2C%20camera%20equipment%2C%20content%20creator%20environment%2C%20professional%20lighting&width=300&height=200&seq=youtube-channel&orientation=landscape" 
+                                 alt="YouTube Channel" 
+                                 class="w-full h-40 object-cover object-top rounded-lg">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">YouTube Channel</h3>
+                        <p class="text-gray-600 text-sm mb-4">Educational content and tutorials on personal branding and tech</p>
+                        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+                            Watch Videos <i class="ri-youtube-line ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="portfolio-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="mb-6">
+                            <img src="https://readdy.ai/api/search-image?query=Instagram%20social%20media%20content%20creation%2C%20aesthetic%20feed%20layout%2C%20content%20planning%2C%20social%20media%20marketing%2C%20modern%20digital%20marketing%20setup&width=300&height=200&seq=instagram-profile&orientation=landscape" 
+                                 alt="Instagram Profile" 
+                                 class="w-full h-40 object-cover object-top rounded-lg">
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Instagram Profile</h3>
+                        <p class="text-gray-600 text-sm mb-4">Daily insights on digital marketing and personal growth</p>
+                        <a href="#" class="inline-flex items-center text-primary hover:text-primary/80 font-medium">
+                            Follow <i class="ri-instagram-line ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Ready to build your personal brand? Let's discuss how I can help you grow digitally
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="space-y-8">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="ri-mail-line text-primary ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900">Email</h3>
+                                    <p class="text-gray-600">ashikkumar4181@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                    <i class="ri-phone-line text-secondary ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900">Phone</h3>
+                                    <p class="text-gray-600">+91 6202328006</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                    <i class="ri-map-pin-line text-primary ri-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900">Location</h3>
+                                    <p class="text-gray-600">Tirupati, Puttur, Andhra Pradesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Follow Me</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-linkedin-line"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-xl">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Ashik Kumar</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering individuals and educators to build powerful personal brands through strategic content and technology.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-gray-400 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-white transition-colors">About</a>
+                        <a href="#services" class="block text-gray-400 hover:text-white transition-colors">Services</a>
+                        <a href="#portfolio" class="block text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary transition-colors">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Ashik Kumar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
