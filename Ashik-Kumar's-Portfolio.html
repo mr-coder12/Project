@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashik Kumar - Content Creator & Tech Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5CF6',
+                        secondary: '#06B6D4'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-cyan-50 min-h-screen">
+    <nav class="w-full bg-white/80 backdrop-blur-sm border-b border-purple-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-['Pacifico'] text-2xl text-primary">Ashik Kumar</div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-primary transition-colors">Skills</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <button id="menu-toggle" class="md:hidden w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="w-full min-h-screen flex items-center justify-center relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=modern%20tech%20workspace%20with%20soft%20pastel%20colors%2C%20minimalist%20design%2C%20clean%20background%20with%20subtle%20gradients%2C%20professional%20atmosphere%2C%20left%20side%20space%20for%20text%20content%2C%20right%20side%20featuring%20modern%20technology%20elements%20like%20laptops%20and%20creative%20tools%2C%20soft%20lighting%2C%20contemporary%20aesthetic&width=1920&height=1080&seq=hero-bg&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+        <div class="relative z-10 max-w-6xl mx-auto px-6 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            Empowering <span class="text-primary">Personal Brands</span> Through Tech & Content
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            I am a content creator who runs several successful blogs and social media platforms focused on internet culture and education. I bring both technical and creative skills to everything I do.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-purple-700 transition-colors whitespace-nowrap">
+                            View My Work
+                        </button>
+                        <button class="border-2 border-primary text-primary px-8 py-4 !rounded-button hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+                            <img src="https://static.readdy.ai/image/b547e886fc510ba2a50ea63f447ba2d8/48b05a73f645141894378cfb3e952c19.jfif" alt="Ashik Kumar" class="w-full h-full object-cover object-top">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-secondary text-white p-4 rounded-full shadow-lg">
+                            <i class="ri-code-s-slash-line text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-xl text-gray-600">Get to know the person behind the content</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-900">My Journey</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        I am a content creator who runs several successful blogs and social media platforms focused on internet culture and education. I bring both technical and creative skills to everything I do.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-graduation-cap-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Education</h4>
+                                <p class="text-gray-600">B.Tech from District Chittoor, Puttur (Andhra Pradesh)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-map-pin-line text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Location</h4>
+                                <p class="text-gray-600">Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-purple-50 to-cyan-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">What I Do</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i class="ri-check-line text-white text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Create engaging content across multiple platforms</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i class="ri-check-line text-white text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Develop technical solutions using modern programming languages</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i class="ri-check-line text-white text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Help individuals and educators build their personal brands</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i class="ri-check-line text-white text-sm"></i>
+                            </div>
+                            <p class="text-gray-600">Bridge the gap between technology and creative content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-gradient-to-br from-purple-50 to-cyan-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Skills & Expertise</h2>
+                <p class="text-xl text-gray-600">Technologies and tools I work with</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-code-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Programming</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Java</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-20 h-2 bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Python</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-20 h-2 bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">HTML/CSS</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-22 h-2 bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">SQL</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-18 h-2 bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-tools-line text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Tools & Technologies</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Microsoft Office</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-22 h-2 bg-secondary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Data Analysis</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-20 h-2 bg-secondary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">AI Tools</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-18 h-2 bg-secondary rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Excel</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-21 h-2 bg-secondary rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-article-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Content Creation</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Blogging</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-23 h-2 bg-purple-600 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Digital Branding</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-21 h-2 bg-purple-600 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Social Media</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-22 h-2 bg-purple-600 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">Content Strategy</span>
+                            <div class="w-24 h-2 bg-gray-200 rounded-full">
+                                <div class="w-20 h-2 bg-purple-600 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Services</h2>
+                <p class="text-xl text-gray-600">We help individuals and educators build personal brands through blogging, social media, and content strategies.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-edit-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Blog Setup & Strategy</h3>
+                    <p class="text-gray-600">Complete blog setup with content strategy and optimization for maximum reach and engagement.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-cyan-50 to-cyan-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-user-star-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Personal Brand Coaching</h3>
+                    <p class="text-gray-600">One-on-one coaching to help you build and maintain a strong personal brand across platforms.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-calendar-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Social Media Planning</h3>
+                    <p class="text-gray-600">Strategic content planning and scheduling for consistent social media presence.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-computer-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Tech Support</h3>
+                    <p class="text-gray-600">Technical support for personal websites, blog optimization, and digital tool integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-gradient-to-br from-purple-50 to-cyan-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Portfolio & Projects</h2>
+                <p class="text-xl text-gray-600">Showcasing my digital presence and creative work</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-orange-400 to-red-500 relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=colorful%20holi%20festival%20celebration%20with%20vibrant%20colors%2C%20traditional%20indian%20festival%20atmosphere%2C%20joyful%20celebration%2C%20bright%20powder%20colors%2C%20festive%20decorations%2C%20cultural%20heritage%2C%20clean%20modern%20design&width=400&height=300&seq=holi-blog&orientation=landscape" alt="Holi Blog" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-semibold">Holi.co.in</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">A festive blog celebrating the colors and traditions of Holi festival with engaging content and cultural insights.</p>
+                        <button class="text-primary hover:text-purple-700 font-medium whitespace-nowrap">
+                            Visit Site <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=beautiful%20diwali%20deepawali%20festival%20celebration%20with%20traditional%20oil%20lamps%20diyas%2C%20golden%20lights%2C%20rangoli%20patterns%2C%20festive%20decorations%2C%20warm%20lighting%2C%20cultural%20celebration%2C%20elegant%20design&width=400&height=300&seq=deepawali-blog&orientation=landscape" alt="Deepawali Blog" class="w-full h-full object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-semibold">Deepawali.co.in</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Cultural and celebratory content focusing on Deepawali traditions, recipes, and festive celebrations.</p>
+                        <button class="text-primary hover:text-purple-700 font-medium whitespace-nowrap">
+                            Visit Site <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 relative overflow-hidden flex items-center justify-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                            <i class="ri-youtube-fill text-red-500 text-3xl"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-semibold">YouTube Channel</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Educational and tech-focused video content helping viewers learn programming and digital skills.</p>
+                        <button class="text-primary hover:text-purple-700 font-medium whitespace-nowrap">
+                            Watch Videos <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-purple-600 relative overflow-hidden flex items-center justify-center">
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                            <i class="ri-instagram-fill text-pink-500 text-3xl"></i>
+                        </div>
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h3 class="text-xl font-semibold">Instagram</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Daily inspiration, behind-the-scenes content, and quick tech tips shared through engaging visual stories.</p>
+                        <button class="text-primary hover:text-purple-700 font-medium whitespace-nowrap">
+                            Follow Me <i class="ri-arrow-right-line ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
+                <p class="text-xl text-gray-600">Ready to build your personal brand? Get in touch!</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-mail-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Email</h3>
+                                <p class="text-gray-600">ashikkumar4181@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                <i class="ri-phone-line text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Phone</h3>
+                                <p class="text-gray-600">+91 6202328006</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="ri-map-pin-line text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-900">Location</h3>
+                                <p class="text-gray-600">Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-50 to-cyan-50 p-8 rounded-2xl">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                                <i class="ri-linkedin-fill text-white text-xl"></i>
+                            </div>
+                            <div class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-900 transition-colors cursor-pointer">
+                                <i class="ri-github-fill text-white text-xl"></i>
+                            </div>
+                            <div class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors cursor-pointer">
+                                <i class="ri-twitter-fill text-white text-xl"></i>
+                            </div>
+                            <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors cursor-pointer">
+                                <i class="ri-instagram-fill text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="John">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Project Inquiry">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent text-sm" placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-4 !rounded-button hover:bg-purple-700 transition-colors whitespace-nowrap">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <div class="font-['Pacifico'] text-3xl text-primary mb-4">Ashik Kumar</div>
+                <p class="text-gray-400 mb-8">Empowering Personal Brands Through Tech & Content</p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <i class="ri-linkedin-fill text-lg"></i>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <i class="ri-github-fill text-lg"></i>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <i class="ri-twitter-fill text-lg"></i>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors cursor-pointer">
+                        <i class="ri-instagram-fill text-lg"></i>
+                    </div>
+                </div>
+                <div class="border-t border-gray-800 pt-8">
+                    <p class="text-gray-400">&copy; 2025 Ashik Kumar. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu">
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            menuToggle.addEventListener('click', function() {
+                const mobileMenu = document.getElementById('mobile-menu-content');
+                if (mobileMenu) {
+                    mobileMenu.remove();
+                } else {
+                    const menuContent = document.createElement('div');
+                    menuContent.id = 'mobile-menu-content';
+                    menuContent.className = 'md:hidden bg-white border-t border-purple-100 py-4';
+                    menuContent.innerHTML = `
+                        <div class="px-6 space-y-4">
+                            <a href="#home" class="block text-gray-700 hover:text-primary transition-colors">Home</a>
+                            <a href="#about" class="block text-gray-700 hover:text-primary transition-colors">About</a>
+                            <a href="#skills" class="block text-gray-700 hover:text-primary transition-colors">Skills</a>
+                            <a href="#services" class="block text-gray-700 hover:text-primary transition-colors">Services</a>
+                            <a href="#portfolio" class="block text-gray-700 hover:text-primary transition-colors">Portfolio</a>
+                            <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
+                        </div>
+                    `;
+                    nav.appendChild(menuContent);
+                }
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        const mobileMenu = document.getElementById('mobile-menu-content');
+                        if (mobileMenu) {
+                            mobileMenu.remove();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
